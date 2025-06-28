@@ -1,0 +1,114 @@
+1. Caesar Cipher
+🔹 Encrypt:
+Input:
+Text: "Attack at dawn"
+Key: 3
+Output: "Dwwdfn dw gdzq"
+🔹 Decrypt:
+Input:
+Text: "Dwwdfn dw gdzq"
+Key: 3
+Output: "Attack at dawn"
+
+2. Playfair Cipher
+🔹 Encrypt:
+Input:
+Key: "monarchy"
+Text: "hide the gold"
+Output: "BMODZBXDNABE"
+🔹 Decrypt:
+Input:
+Key: "monarchy"
+Text: "BMODZBXDNABE"
+Output: "HIDETHEGOLDX"
+
+3. Hill Cipher (2x2 Matrix)
+🔹 Encrypt:
+Input:
+Key Matrix:
+                        [5, 8]  
+[17, 3] 
+Text: "HELP"
+Output: "PBTY"
+🔹 Decrypt:
+Input:
+Same Key Matrix
+Text: "HIAT"
+Output: "HELP"
+
+4. Vigenère Cipher
+🔹 Encrypt:
+Input:
+Key: "KEY"
+Text: "ATTACKATDAWN"
+Output: "KXPRKQNLPRYE"
+🔹 Decrypt:
+Input:
+Key: "KEY"
+Text: "KXPRKQNLPRYE"
+Output: "ATTACKATDAWN"
+
+5. Rail Fence Cipher
+🔹 Encrypt:
+Input:
+Rails: 3
+Text: "WEAREDISCOVERED"
+Output: "WECRLTEERDSOEEV"
+🔹 Decrypt:
+Input:
+Rails: 3
+Text: "WECRLTEERDSOEEV"
+Output: "WEAREDISCOVERED"
+
+6. DES (Simplified XOR Demo)
+🔹 Encrypt:
+Input:
+Key: "SECRETKY" (must be 8 letters)
+Text: "Hello123"
+Output (Hex): "1a0a0d1d04070602"
+🔹 Decrypt:
+Input:
+Key: "SECRETKY"
+Ciphertext (Hex): "1a0a0d1d04070602"
+Output: "Hello123"
+
+7. RSA
+🔹 Key Generation:
+Input:
+Prime p: 61
+Prime q: 53
+Output:
+Public Key (e, n): 17, 3233
+Private Key (d, n): 2753, 3233
+🔹 Encrypt:
+Input:
+Public Key (e, n): 17, 3233
+Message (number): 123
+Output: 855
+🔹 Decrypt:
+Input:
+Private Key (d, n): 2753, 3233
+Ciphertext: 855
+Output: 123
+
+8. DSA (Digital Signature)
+🔹 Key Generation:
+Input:
+Prime p: 23
+Prime q: 11
+Generator g: 4
+Output:
+Private Key (x): 7
+Public Key (y): 8
+🔹 Sign a Message:
+Input:
+Private Key (x): 7
+Message: "Hello"
+Output:
+Signature (r, s): (7, 3)
+🔹 Verify Signature:
+Input:
+Public Key (y): 8
+Message: "Hello"
+Signature (r, s): (7, 3)
+Output: "Signature is valid!"
